@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>圣杯布局</title>
+	<style type="text/css">
+		*{
+		padding: 0;
+		margin:0;	
+		}
+		body{min-width: 700px;width: 100%;}
+		.header{
+			float:left;
+			width: 100%;
+			background: #000;
+			height: 100px;
+			line-height: 40px;
+			/*text-align: center;*/
+			/*position: relative;*/
+			/*overflow: hidden;
+			zoom:1;*/
+		}
+		.footer{
+			float:left;
+			width: 100%;
+			background: #000;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+		}
+		.nav{width: 300px;
+			height: 40px;
+			background-color: black;
+			position:absolute;
+			top:0;
+			left:0;
+			float: left;}
+
+		.nav2 ul li{list-style-type: none;
+			display: inline;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			color:white;
+			padding:0px 20px;
+			float: right;
+			line-height: 100px;
+			position: relative;}
+		.content{padding: 0 220px 0 200px;
+			}
+		.left,
+		.middle,
+		.right{
+			position: relative;
+			float: left;
+			min-height: 300px;
+		}
+		.middle{
+			width: 100%;
+			/*background: #1a5acd;*/
+			height: 800px;
+		}
+		.middle img{width: 100%;height: 800px;}
+		.left{
+			width: 200px;
+			margin-left: -100%;
+			background:#1a5acd; 
+			left:-200px;height: 800px;
+		}
+		.right{width:220px;
+			background: #30a457;
+			margin-left: -220px;
+			right:-220px;height: 800px;}
+		
+	
+
+
+	</style>
+</head>
+<body>
+<div>
+	<div class="header">
+		<div class="nav"><img src="http://climg.mukewang.com/590037f600016ce303000100.png"/></div>
+		<div class="nav2">
+			<ul class="tit">
+				<li>课程</li>
+				<li>职业路径</li>
+				<li>实战</li>
+				<li>猿问</li>
+				<li>手记</li>
+			</ul></div>
+	</div>
+	<div class="content">
+		<div class="middle"><img src="http://climg.mukewang.com/590037e00001fab706000400.jpg"/></div>
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	<div class="footer"></div>
+</div>	
+
+</body>
+</html>

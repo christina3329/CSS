@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2-17</title>
+	<style type="text/css">
+		div{
+			position: absolute;
+			top:0;
+			right: 0;
+			bottom: 0;
+			left:0;
+			width: 400px;
+			height: 200px;
+			margin:auto;
+			border:1px solid red;
+			border-bottom: 200px solid red;
+			border-radius: 50%;
+			transform-origin: 50% 50%;
+			animation-name:rotate;
+			animation-duration:5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;        
+			}
+		div::before{
+			content: "";
+			position: absolute;
+			top:92px;
+			right:0px;
+			left:0px;
+			bottom:0px;
+			width: 30px;
+			height: 30px;
+			background-color:white;
+			border:85px solid red;
+			border-radius: 50%;
+		}
+		div::after{
+			content: "";
+			position: absolute;
+			top:92px;
+			right: 0px;
+			left:200px;
+			bottom: 0px;
+			width: 30px;
+			height: 30px;
+			background-color: red;
+			border:85px solid white;
+			border-radius: 50%;
+		}
+		@keyframes rotate{
+			from{transform:rotateZ(0deg);}
+			to{transform:rotateZ(360deg);}
+		}
+		
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

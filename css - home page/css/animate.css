@@ -1,0 +1,214 @@
+.header{
+	transition: all 1s .5s;
+}
+.screen-1__heading,
+.screen-1__subheading{
+	transition: all 1s;
+}
+.header_animate_init{
+	opacity: 0;
+	transform: translate(0,-100%); 
+}
+.screen-1__heading_animate_init,
+.screen-1__subheading_animate_init{
+	opacity: 0;
+	transform: translate(0,100%); 
+}
+.header_animate_done,
+.screen-1__heading_animate_done,
+.screen-1__subheading_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*第二屏*/
+.screen-2__heading{
+	transition: all 1s;
+}
+.screen-2__line-1,
+.screen-2__subheading{
+ 	transition: all 1s .5s; 
+}
+.screen-2__pic-2{
+	transition: all 1s 1s;
+}
+.screen-2__pic-3{
+	transition: all 1s 1.5s;
+}
+.screen-2__pic-3_animate_init,
+.screen-2__heading_animate_init,
+.screen-2__subheading_animate_init{
+	opacity: 0;
+	transform: translate(0,100%); 
+}
+.screen-2__pic-2_animate_init,
+.screen-2__line-1_animate_init{
+	opacity: 0;
+}
+.screen-2__pic-2_animate_done,
+.screen-2__heading_animate_done,
+.screen-2__subheading_animate_done,
+.screen-2__line-1_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen-2__pic-3_animate_done{
+	opacity: 1;
+	animation: trans 1s ease-out 0s 2;
+}
+@-webkit-keyframes trans{
+	0%{transform: translate(0,100%);}
+	35%{transform: translate(0,-10%);}
+	70%{transform: translate(0,10%);}
+	100%{transform: translate(0,0);}
+}
+
+/*第三屏*/
+.screen-3__pic-1,
+.screen-3__heading,
+.screen-3__line-1{
+	transition: all 1s;
+}
+.screen-3__subheading{
+	transition: all .5s .5s;
+}
+.screen-3__lang{
+	transition: all 1s 1s;
+}
+.screen-3__pic-1_animate_init{
+	opacity: 1;
+	transform: scale(0.1);
+}
+.screen-3__lang_animate_init,
+.screen-3__subheading_animate_init{
+	opacity: 0;
+	transform: translate(0,100%); 
+}
+.screen-3__heading_animate_init,
+.screen-3__line-1_animate_init{
+	opacity: 0;
+}
+.screen-3__pic-1_animate_done{
+	transform: scale(1);
+}
+.screen-3__heading_animate_done,
+.screen-3__line-1_animate_done{
+	opacity: 1;
+}
+.screen-3__subheading_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen-3__lang_animate_done{
+	opacity: 1;
+	animation: trans 1s ease-out 1s 1;
+}
+/*第四屏*/
+.screen-4__pics-1,
+.screen-4__pics-2,
+.screen-4__pics-3,
+.screen-4__pics-4,
+.screen-4__heading,
+.screen-4__line-1,
+.screen-4__subheading{
+	transition: all 1s;
+}
+.screen-4__heading_animate_init,
+.screen-4__line-1_animate_init{
+	opacity: 0;
+}
+.screen-4__subheading_animate_init{
+	opacity: 0;
+	transform: translate(0,100%); 
+}
+.screen-4__pics-1_animate_init,
+.screen-4__pics-2_animate_init,
+.screen-4__pics-3_animate_init,
+.screen-4__pics-4_animate_init{
+	transform: scale(0.2);
+}
+.screen-4__subheading_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen-4__line-1_animate_done,
+.screen-4__heading_animate_done{
+	opacity: 1;
+}
+.screen-4__pics-1_animate_done,
+.screen-4__pics-2_animate_done,
+.screen-4__pics-3_animate_done,
+.screen-4__pics-4_animate_done{
+	transform: scale(1);
+}
+/*第五屏*/
+.screen-5__pic-1,
+.screen-5__heading{
+	transition: all 1s;
+}
+.screen-5__subheading,
+.screen-5__line-1{
+	transition: all .5s .5s;
+}
+.screen-5__pic-1_animate_init{
+	transform: scale(0.2);
+}
+.screen-5__line-1_animate_init,
+.screen-5__heading_animate_init{
+	opacity: 0;
+}
+.screen-5__subheading_animate_init{
+	opacity: 0;
+	transform: translate(0,100%); 
+}
+.screen-5__pic-1_animate_done{
+	transform: scale(1);
+}
+.screen-5__line-1_animate_done,
+.screen-5__heading_animate_done{
+	opacity: 1;
+}
+.screen-5__subheading_animate_done{
+	opacity: 1;
+	transform: translate(0,0); 
+}
+/*导航条state back 样式*/
+.header{
+	transition: all 1s;
+}
+.header_status_back_active{
+	background-color: rgba(255,255,255,.5);
+	position: fixed;
+	left: 0;
+	top:0;
+	right: 0;
+	z-index: 4;
+}
+.header_status_back_active .header__logo,
+.header_status_back_active .header__nav-item{
+	color: #fff;
+}
+.header_status_back{
+	background-color: rgba(255,255,255,.5);
+	position: fixed;
+	left: 0;
+	top:0;
+	right: 0;
+	z-index: 4;
+}
+.header_status_back .header__logo,
+.header_status_back .header__nav-item{
+	color: #000;
+}
+/*.header_status_back .header__nav-item_status_active{
+	color: red;
+}*/
+/*大纲 _status_in 样式*/
+.outline{
+	opacity: 0;
+	transition: all 1s;
+	transform: translate(100%,0);
+}
+.outline_status_in{
+	opacity: 1;
+	transform: translate(0,0);
+}

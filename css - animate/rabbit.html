@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>项目作业</title>
+	<style type="text/css">
+		*{margin:0;
+			padding:0;}
+		body{width: 100%;
+			position: relative;}
+		.sky{
+			position: relative;
+			width:100%;
+			height:378px; 
+			background: linear-gradient(rgb(196,288,253),rgba(255,255,255));
+		}/*天空的颜色rgb(196,288,253)*/
+		.cloud{
+			position: absolute;
+			width:50px;
+			height: 50px;
+			background: #fff;
+			border-radius: 50%;
+			top:0px;
+			left:-60px;
+			animation:moveone 8s linear 2s infinite;;
+		}
+		.cloud:before{
+			content: '';
+			width: 45px;
+			height: 33px;
+			background: #fff;
+			border-radius:40px /58px 20px 42px 32px;
+			top:16px;
+			left:-26px;
+			position: absolute;
+			transform: rotate(10deg);
+		}
+		.cloud:after{
+			content: '';
+			width: 30px;
+			height: 30px;
+			background: #fff;
+			border-radius: 65%;
+			top:18px;
+			left:29px;
+			position: absolute;
+		}
+		.cloud.big{
+			transform: scale(1.2);
+			top:30px;
+			left: 0px;
+			animation:movebig 6s linear infinite;
+		}
+		.cloud.nomal1{
+			opacity: 0.8;
+			left: -50px;
+			animation:moveone 8s linear 2s infinite;
+		}
+		.cloud.nomal2{
+			top:-2px;
+			opacity: 0.8;
+			left: 0px;
+			animation:movetwo 8s linear infinite;
+		}
+		.cloud.nomal3{
+			top:80px;
+			left: 0px;
+			opacity: 0.8;
+			animation:movethree 8s linear infinite;
+		}
+		.cloud.small{
+			transform: scale(0.8);
+			top:79px;
+			left: -50px;
+			opacity: 0.5px;
+			animation:movesmall 10s linear 2s infinite;
+		}
+		.glass{
+			width: 100%;
+			height: 252px;
+			background: linear-gradient(to top,rgb(148,190,89),rgba(255,255,255));
+		}/*草地的颜色rgb(148,190,89)*/
+		.rabbit{
+			position: absolute;
+			width: 160px;
+			height: 150px;
+			bottom: 50px;
+			right: 200px;
+		}
+		.rabbit img{width: 160px;height: 150px;}
+		@keyframes movebig{
+			from{left:100%;}
+			to{left: 0%;}
+		}
+		@keyframes moveone{
+			from{left:100%;}
+			to{left: 0%;}
+		}
+		@keyframes movetwo{
+			from{left:100%;}
+			to{left: 0%;}
+		}
+		@keyframes movethree{
+			from{left:100%;}
+			to{left: 0%;}
+		}
+		@keyframes movesmall{
+			from{left:100%;}
+			to{left: 0%;}
+		}
+	</style>
+</head>
+<body>
+	<div class="sky">
+		<div class="cloud big"></div>
+		<div class="cloud normal1"></div>
+		<div class="cloud nomal2"></div>
+		<div class="cloud nomal3"></div>
+		<div class="cloud small"></div>
+	</div>
+	<div class="glass">
+		<div class="rabbit"><img src="image/rabbit.png"></div>
+	</div>
+</body>
+</html>
